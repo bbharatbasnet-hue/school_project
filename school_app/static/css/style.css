@@ -451,6 +451,7 @@ table.data-table tr:last-child td{border-bottom:none;}
         border-radius: 99px;
         background: var(--paper-2);
         overflow: hidden;
+
         margin-top: 8px;
       }
       .strength-meter .fill {
@@ -541,3 +542,167 @@ table.data-table tr:last-child td{border-bottom:none;}
 .button:hover::before {
   opacity: 1;
 }
+
+
+/* galllery */
+
+      .filter-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 34px;
+      }
+      .filter-btn {
+        padding: 10px 18px;
+        border-radius: 999px;
+        border: 1.5px solid var(--line);
+        background: var(--white);
+        font-weight: 700;
+        font-size: 13.5px;
+        cursor: pointer;
+        color: var(--ink-soft);
+        transition: 0.25s;
+      }
+      .filter-btn.active {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      .masonry {
+        columns: 4 220px;
+        column-gap: 14px;
+      }
+      .masonry .m-item {
+        break-inside: avoid;
+        margin-bottom: 14px;
+        border-radius: 14px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+      .masonry .m-item img {
+        width: 100%;
+        display: block;
+        transition: transform 0.5s;
+      }
+      .masonry .m-item:hover img {
+        transform: scale(1.06);
+      }
+      .masonry .m-item .cap {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(11, 37, 69, 0.85),
+          transparent
+        );
+        color: #fff;
+        padding: 22px 14px 10px;
+        font-size: 12.5px;
+        font-weight: 700;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .masonry .m-item:hover .cap {
+        opacity: 1;
+      }
+      .masonry .m-item.hidden {
+        display: none;
+      }
+      .video-thumb {
+        position: relative;
+        border-radius: 14px;
+        overflow: hidden;
+        aspect-ratio: 16/9;
+        cursor: pointer;
+      }
+      .video-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .video-thumb .play {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(11, 37, 69, 0.35);
+      }
+      .video-thumb .play i {
+        font-size: 44px;
+        color: #fff;
+      }
+
+
+      /* news */
+      
+ .filter-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 34px;
+      }
+      .filter-btn {
+        padding: 10px 18px;
+        border-radius: 999px;
+        border: 1.5px solid var(--line);
+        background: var(--white);
+        font-weight: 700;
+        font-size: 13.5px;
+        cursor: pointer;
+        color: var(--ink-soft);
+        transition: 0.25s;
+      }
+      .filter-btn.active {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      .news-list-item {
+        display: flex;
+        gap: 20px;
+        padding: 22px;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        background: var(--white);
+        align-items: flex-start;
+      }
+      .news-list-item.hidden {
+        display: none;
+      }
+      .news-list-item .thumb {
+        width: 110px;
+        height: 90px;
+        border-radius: 12px;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+      .news-list-item .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media (max-width: 600px) {
+        .news-list-item {
+          flex-direction: column;
+        }
+        .news-list-item .thumb {
+          width: 100%;
+          height: 150px;
+        }
+      }
+      .pin-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--crimson);
+        font-size: 11.5px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 6px;
+      }
+      

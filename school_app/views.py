@@ -21,14 +21,14 @@ def index(request):
 
 def contact(request):
     if request.method == "POST":
-        name = request.POST.get("full_name")
+        full_name = request.POST.get("full_name")
         phone_number = request.POST.get("phone_number")
         email = request.POST.get("email")
         subject = request.POST.get("subject")
         message = request.POST.get("message")
 
         Contact.objects.create(
-            name=name,
+            full_name=full_name,
             phone_number=phone_number,
             email=email,
             subject=subject,

@@ -280,3 +280,76 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
   
+
+
+      // news 
+      document.querySelectorAll("#filterRow .filter-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document
+        .querySelectorAll("#filterRow .filter-btn")
+        .forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const f = btn.dataset.filter;
+      document.querySelectorAll("#newsList .news-list-item").forEach((item) => {
+        item.classList.toggle("hidden", f !== "all" && item.dataset.cat !== f);
+      });
+    });
+  });
+  document
+    .getElementById("loadMoreBtn")
+    ?.addEventListener("click", function () {
+      this.textContent = "All notices loaded";
+      this.disabled = true;
+      this.style.opacity = "0.6";
+    });
+
+    // Gallery filter
+      document.querySelectorAll("#filterRow .filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll("#filterRow .filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const f = btn.dataset.filter;
+          document.querySelectorAll("#masonryGrid .m-item").forEach((item) => {
+            item.classList.toggle(
+              "hidden",
+              f !== "all" && item.dataset.cat !== f,
+            );
+          });
+        });
+      });
+      document
+        .getElementById("loadMoreBtn")
+        ?.addEventListener("click", function () {
+          this.textContent = "All photos loaded";
+          this.disabled = true;
+          this.style.opacity = "0.6";
+        });
+
+
+        // news
+         document.querySelectorAll("#filterRow .filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll("#filterRow .filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const f = btn.dataset.filter;
+          document
+            .querySelectorAll("#newsList .news-list-item")
+            .forEach((item) => {
+              item.classList.toggle(
+                "hidden",
+                f !== "all" && item.dataset.cat !== f,
+              );
+            });
+        });
+      });
+      document
+        .getElementById("loadMoreBtn")
+        ?.addEventListener("click", function () {
+          this.textContent = "All notices loaded";
+          this.disabled = true;
+          this.style.opacity = "0.6";
+        });

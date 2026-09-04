@@ -33,4 +33,4 @@ from .models import  Contact
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'phone_number', 'email', 'subject', 'message')
+    list_display = ('id', 'full_name', 'phone_number', 'email', 'subject', 'message')
