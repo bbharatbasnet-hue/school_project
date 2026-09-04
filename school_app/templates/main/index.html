@@ -1,0 +1,840 @@
+{% extends 'base.html' %}{% load static %} {% block content %}
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow"
+            ><i class="fa-solid fa-award crest-dot"></i> Admissions Open — 2026
+            Session</span
+          >
+          <h1>Nurturing Excellence, <em>Building Character.</em></h1>
+          <p class="lead">
+            A Cambridge-aligned secondary school in Nepalgunj where every child
+            is known, challenged, and supported — from Early Childhood
+            Development through Grade 10.
+          </p>
+          <div class="hero-cta">
+            <a href="admissions.html" class="btn btn-crimson"
+              >Apply for Admission <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="about.html" class="btn btn-outline">Take a School Tour</a>
+          </div>
+          <div class="hero-motto">
+            "Knowledge with Character, Character with Courage."
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img
+              src="https://picsum.photos/seed/jcss-hero/900/700"
+              alt="Students of Junior Cambridge Secondary School in the courtyard"
+            />
+          </div>
+          <div class="hero-float-card">
+            <i
+              class="fa-solid fa-trophy"
+              style="color: #c8102e; font-size: 22px"
+            ></i>
+            <div>
+              <div class="num">98%</div>
+              <div class="lbl">SEE Pass Rate 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <div class="container">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="n">
+          <span data-count="1240">0</span><span class="plus">+</span>
+        </div>
+        <div class="l">Students</div>
+      </div>
+      <div class="stat-item">
+        <div class="n">
+          <span data-count="86">0</span><span class="plus">+</span>
+        </div>
+        <div class="l">Teachers</div>
+      </div>
+      <div class="stat-item">
+        <div class="n"><span data-count="42">0</span></div>
+        <div class="l">Classrooms</div>
+      </div>
+      <div class="stat-item">
+        <div class="n">
+          <span data-count="98">0</span><span class="plus">%</span>
+        </div>
+        <div class="l">Result Rate</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PRINCIPAL WELCOME ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 60px">
+        <div class="reveal">
+          <div style="position: relative">
+            <img
+              src="https://picsum.photos/seed/principal-jcss/700/560"
+              alt="Principal of Junior Cambridge Secondary School"
+              style="border-radius: 20px; box-shadow: var(--shadow-lg)"
+            />
+            <div
+              style="
+                position: absolute;
+                bottom: -20px;
+                right: -20px;
+                background: var(--navy);
+                color: #fff;
+                padding: 16px 22px;
+                border-radius: 14px;
+                box-shadow: var(--shadow-lg);
+              "
+            >
+              <div
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-size: 17px;
+                "
+              >
+                Mr. Rajendra Thapa
+              </div>
+              <div style="font-size: 12px; color: var(--gold)">
+                Principal, M.Ed.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Message From The Principal</span>
+          <h2>
+            "We don't just prepare students for exams — we prepare them for
+            life."
+          </h2>
+          <p>
+            Welcome to Junior Cambridge Secondary School. For over two decades,
+            we have combined rigorous academics with strong values, giving every
+            learner the confidence to question, create, and lead. Our classrooms
+            are places of curiosity; our corridors, places of kindness.
+          </p>
+          <p>
+            I invite you to visit our campus, meet our dedicated faculty, and
+            see for yourself why families across Lumbini Province trust us with
+            their children's future.
+          </p>
+          <a href="about.html#principal" class="btn btn-navy"
+            >Read Full Message <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SCHOOL ============ -->
+  <section class="section" style="background: var(--paper-2)">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">About Our School</span>
+        <h2>A Complete Learning Ecosystem</h2>
+        <p style="margin: 0 auto">
+          Founded in 2001, Junior Cambridge Secondary School has grown into one
+          of Nepalgunj's most trusted institutions — blending the national
+          curriculum with Cambridge-style teaching methods.
+        </p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card reveal" style="padding: 28px">
+          <div class="icon-tile"><i class="fa-solid fa-book-open"></i></div>
+          <h3 style="font-size: 18px">Modern Curriculum</h3>
+          <p style="font-size: 14.5px">
+            Blended national & Cambridge-aligned syllabus with project-based
+            learning.
+          </p>
+        </div>
+        <div class="card reveal" style="padding: 28px">
+          <div class="icon-tile crimson">
+            <i class="fa-solid fa-flask"></i>
+          </div>
+          <h3 style="font-size: 18px">Science & Tech Labs</h3>
+          <p style="font-size: 14.5px">
+            Fully-equipped physics, chemistry, biology and computer
+            laboratories.
+          </p>
+        </div>
+        <div class="card reveal" style="padding: 28px">
+          <div class="icon-tile"><i class="fa-solid fa-futbol"></i></div>
+          <h3 style="font-size: 18px">Sports & Arts</h3>
+          <p style="font-size: 14.5px">
+            Football grounds, basketball courts, music & art studios for every
+            child.
+          </p>
+        </div>
+        <div class="card reveal" style="padding: 28px">
+          <div class="icon-tile crimson">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <h3 style="font-size: 18px">Safe Campus</h3>
+          <p style="font-size: 14.5px">
+            CCTV-monitored campus with trained counsellors and a nurse on site.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 60px">
+        <div class="reveal">
+          <span class="eyebrow">Why Families Choose Us</span>
+          <h2 style="margin-bottom: 26px">
+            Built Around Every Child's Potential
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 20px">
+            <div class="flex gap-3" style="align-items: flex-start">
+              <div
+                class="icon-tile"
+                style="
+                  width: 44px;
+                  height: 44px;
+                  font-size: 17px;
+                  flex-shrink: 0;
+                "
+              >
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 16.5px; margin: 0 0 4px">
+                  Low Student-Teacher Ratio
+                </h3>
+                <p style="font-size: 14.5px; margin: 0">
+                  Just 18:1 — so no child is ever a face in the crowd.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3" style="align-items: flex-start">
+              <div
+                class="icon-tile crimson"
+                style="
+                  width: 44px;
+                  height: 44px;
+                  font-size: 17px;
+                  flex-shrink: 0;
+                "
+              >
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 16.5px; margin: 0 0 4px">
+                  Proven Academic Results
+                </h3>
+                <p style="font-size: 14.5px; margin: 0">
+                  Consistently top-ranking SEE results in the district for 8
+                  years running.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3" style="align-items: flex-start">
+              <div
+                class="icon-tile"
+                style="
+                  width: 44px;
+                  height: 44px;
+                  font-size: 17px;
+                  flex-shrink: 0;
+                "
+              >
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 16.5px; margin: 0 0 4px">
+                  Values-Based Education
+                </h3>
+                <p style="font-size: 14.5px; margin: 0">
+                  Weekly life-skills, ethics and community service programs.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3" style="align-items: flex-start">
+              <div
+                class="icon-tile crimson"
+                style="
+                  width: 44px;
+                  height: 44px;
+                  font-size: 17px;
+                  flex-shrink: 0;
+                "
+              >
+                <i class="fa-solid fa-laptop"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 16.5px; margin: 0 0 4px">
+                  Digital-Ready Classrooms
+                </h3>
+                <p style="font-size: 14.5px; margin: 0">
+                  Smart boards and a dedicated student portal for homework &
+                  results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <img
+            src="https://picsum.photos/seed/classroom-jcss/800/650"
+            alt="Students learning in a modern classroom"
+            style="border-radius: 20px; box-shadow: var(--shadow-lg)"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROGRAMS ============ -->
+  <section class="section" style="background: var(--paper-2)">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Featured Programs</span>
+        <h2>Programs for Every Stage</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card program-card reveal">
+          <span class="tag">Ages 3–5</span>
+          <div class="icon-tile"><i class="fa-solid fa-shapes"></i></div>
+          <h3 style="font-size: 18px">Early Childhood (ECD)</h3>
+          <p style="font-size: 14.5px">
+            Play-based learning building curiosity, motor skills, and early
+            literacy.
+          </p>
+        </div>
+        <div class="card program-card reveal">
+          <span class="tag">Grade 1–5</span>
+          <div class="icon-tile crimson">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+          <h3 style="font-size: 18px">Primary School</h3>
+          <p style="font-size: 14.5px">
+            Core literacy & numeracy foundation with arts, sports and languages.
+          </p>
+        </div>
+        <div class="card program-card reveal">
+          <span class="tag">Grade 6–8</span>
+          <div class="icon-tile"><i class="fa-solid fa-atom"></i></div>
+          <h3 style="font-size: 18px">Lower Secondary</h3>
+          <p style="font-size: 14.5px">
+            Subject specialisation begins with science, math & social studies
+            labs.
+          </p>
+        </div>
+        <div class="card program-card reveal">
+          <span class="tag">Grade 9–10</span>
+          <div class="icon-tile crimson">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 style="font-size: 18px">Secondary (SEE Prep)</h3>
+          <p style="font-size: 14.5px">
+            Exam-focused mentoring, career counselling, and mock board tests.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS & NOTICES ============ -->
+  <section class="section" id="news">
+    <div class="container">
+      <div
+        class="section-head reveal"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          flex-wrap: wrap;
+          gap: 16px;
+          max-width: none;
+        "
+      >
+        <div>
+          <span class="eyebrow">Latest Updates</span>
+          <h2 style="margin: 0">News &amp; Notices</h2>
+        </div>
+        <a href="#" class="btn btn-navy btn-sm">View All Notices</a>
+      </div>
+      <div class="grid grid-3">
+        <div class="card news-card reveal">
+          <div class="news-thumb">
+            <img
+              src="https://picsum.photos/seed/news1-jcss/500/320"
+              alt="Admission notice"
+            />
+            <div class="news-date">
+              <div class="d">12</div>
+              <div class="m">Jul</div>
+            </div>
+          </div>
+          <div class="news-body">
+            <span class="cat">Admissions</span>
+            <h3>2026 Admission Applications Now Open</h3>
+            <p>
+              Apply online for ECD through Grade 9 before seats fill for the new
+              session.
+            </p>
+          </div>
+        </div>
+        <div class="card news-card reveal">
+          <div class="news-thumb">
+            <img
+              src="https://picsum.photos/seed/news2-jcss/500/320"
+              alt="Science fair"
+            />
+            <div class="news-date">
+              <div class="d">28</div>
+              <div class="m">Jun</div>
+            </div>
+          </div>
+          <div class="news-body">
+            <span class="cat">Achievement</span>
+            <h3>Students Win Regional Science Fair</h3>
+            <p>
+              Grade 9 team took first place with their solar-irrigation
+              prototype.
+            </p>
+          </div>
+        </div>
+        <div class="card news-card reveal">
+          <div class="news-thumb">
+            <img
+              src="https://picsum.photos/seed/news3-jcss/500/320"
+              alt="Term exam routine"
+            />
+            <div class="news-date">
+              <div class="d">15</div>
+              <div class="m">Jun</div>
+            </div>
+          </div>
+          <div class="news-body">
+            <span class="cat">Circular</span>
+            <h3>First Terminal Exam Routine Published</h3>
+            <p>
+              Download the full timetable from the Downloads section for all
+              grades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UPCOMING EVENTS ============ -->
+  <section class="section" style="background: var(--paper-2)">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Save The Date</span>
+        <h2>Upcoming Events</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="event-row reveal">
+          <div class="event-date-block">
+            <div class="d">22</div>
+            <div class="m">Jul</div>
+          </div>
+          <div>
+            <h3 style="font-size: 17px; margin: 0 0 4px">Annual Sports Week</h3>
+            <p style="font-size: 14px; margin: 0">
+              Inter-house athletics, football & relay competitions.
+            </p>
+          </div>
+        </div>
+        <div class="event-row reveal">
+          <div class="event-date-block">
+            <div class="d">05</div>
+            <div class="m">Aug</div>
+          </div>
+          <div>
+            <h3 style="font-size: 17px; margin: 0 0 4px">
+              Parent-Teacher Conference
+            </h3>
+            <p style="font-size: 14px; margin: 0">
+              One-on-one progress discussions for all grades.
+            </p>
+          </div>
+        </div>
+        <div class="event-row reveal">
+          <div class="event-date-block">
+            <div class="d">18</div>
+            <div class="m">Aug</div>
+          </div>
+          <div>
+            <h3 style="font-size: 17px; margin: 0 0 4px">
+              Science & Innovation Fair
+            </h3>
+            <p style="font-size: 14px; margin: 0">
+              Student projects on display for parents and the community.
+            </p>
+          </div>
+        </div>
+        <div class="event-row reveal">
+          <div class="event-date-block">
+            <div class="d">02</div>
+            <div class="m">Sep</div>
+          </div>
+          <div>
+            <h3 style="font-size: 17px; margin: 0 0 4px">
+              Annual Cultural Program
+            </h3>
+            <p style="font-size: 14px; margin: 0">
+              Music, dance and drama performances by every grade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Student Achievements</span>
+        <h2>Excellence, Recognized</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card reveal" style="padding: 26px; text-align: center">
+          <i
+            class="fa-solid fa-trophy"
+            style="font-size: 30px; color: var(--gold)"
+          ></i>
+          <h3 style="font-size: 16px; margin: 14px 0 4px">
+            National Math Olympiad
+          </h3>
+          <p style="font-size: 13.5px">Gold medal, Grade 8</p>
+        </div>
+        <div class="card reveal" style="padding: 26px; text-align: center">
+          <i
+            class="fa-solid fa-medal"
+            style="font-size: 30px; color: var(--crimson)"
+          ></i>
+          <h3 style="font-size: 16px; margin: 14px 0 4px">
+            Provincial Football Cup
+          </h3>
+          <p style="font-size: 13.5px">Champions, U-16 Team</p>
+        </div>
+        <div class="card reveal" style="padding: 26px; text-align: center">
+          <i
+            class="fa-solid fa-microphone"
+            style="font-size: 30px; color: var(--navy)"
+          ></i>
+          <h3 style="font-size: 16px; margin: 14px 0 4px">
+            Debate Championship
+          </h3>
+          <p style="font-size: 13.5px">Best Speaker Award</p>
+        </div>
+        <div class="card reveal" style="padding: 26px; text-align: center">
+          <i
+            class="fa-solid fa-palette"
+            style="font-size: 30px; color: var(--gold)"
+          ></i>
+          <h3 style="font-size: 16px; margin: 14px 0 4px">
+            National Art Contest
+          </h3>
+          <p style="font-size: 13.5px">1st Runner-up, Grade 6</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY PREVIEW ============ -->
+  <section class="section" style="background: var(--paper-2)" id="gallery">
+    <div class="container">
+      <div
+        class="section-head reveal"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          flex-wrap: wrap;
+          gap: 16px;
+          max-width: none;
+        "
+      >
+        <div>
+          <span class="eyebrow">Campus Life</span>
+          <h2 style="margin: 0">Photo Gallery</h2>
+        </div>
+        <a href="#" class="btn btn-navy btn-sm">View Full Gallery</a>
+      </div>
+      <div class="gallery-grid reveal">
+        <div
+          class="g-item"
+          data-lightbox-src="https://picsum.photos/seed/gal1/1000/800"
+        >
+          <img
+            src="https://picsum.photos/seed/gal1/500/500"
+            alt="Annual day performance"
+          />
+        </div>
+        <div
+          class="g-item"
+          data-lightbox-src="https://picsum.photos/seed/gal2/1000/800"
+        >
+          <img
+            src="https://picsum.photos/seed/gal2/500/500"
+            alt="Science lab session"
+          />
+        </div>
+        <div
+          class="g-item"
+          data-lightbox-src="https://picsum.photos/seed/gal3/1000/800"
+        >
+          <img src="https://picsum.photos/seed/gal3/500/500" alt="Sports day" />
+        </div>
+        <div
+          class="g-item"
+          data-lightbox-src="https://picsum.photos/seed/gal4/1000/800"
+        >
+          <img src="https://picsum.photos/seed/gal4/500/500" alt="Art class" />
+        </div>
+        <div
+          class="g-item"
+          data-lightbox-src="https://picsum.photos/seed/gal5/1000/800"
+        >
+          <img
+            src="https://picsum.photos/seed/gal5/500/500"
+            alt="Library reading time"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="lightbox"
+      id="lightbox"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(11, 37, 69, 0.9);
+        z-index: 200;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        cursor: zoom-out;
+      "
+    >
+      <img
+        src=""
+        alt="Gallery preview"
+        style="max-width: 90vw; max-height: 85vh; border-radius: 14px"
+      />
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Parents & Students Say</h2>
+      </div>
+      <div class="testi-track reveal">
+        <div class="testi-slide active">
+          <img
+            class="testi-avatar"
+            src="https://picsum.photos/seed/parent1/120/120"
+            alt="Parent"
+          />
+          <p class="quote">
+            "My daughter has flourished here — not just academically, but in
+            confidence. The teachers genuinely know each child."
+          </p>
+          <h4 style="font-size: 15px; margin-top: 14px">Sunita Karki</h4>
+          <p style="font-size: 13px">Parent, Grade 6</p>
+        </div>
+        <div class="testi-slide">
+          <img
+            class="testi-avatar"
+            src="https://picsum.photos/seed/parent2/120/120"
+            alt="Parent"
+          />
+          <p class="quote">
+            "The science labs and project work prepared my son far better than I
+            expected for secondary school."
+          </p>
+          <h4 style="font-size: 15px; margin-top: 14px">Bikash Shrestha</h4>
+          <p style="font-size: 13px">Parent, Grade 9</p>
+        </div>
+        <div class="testi-slide">
+          <img
+            class="testi-avatar"
+            src="https://picsum.photos/seed/alumna1/120/120"
+            alt="Alumna"
+          />
+          <p class="quote">
+            "Junior Cambridge gave me the discipline and curiosity that still
+            guide me in university today."
+          </p>
+          <h4 style="font-size: 15px; margin-top: 14px">Anisha Rana</h4>
+          <p style="font-size: 13px">Alumna, Batch of 2022</p>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="section" style="padding-top: 0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h3>Ready to Join the Junior Cambridge Family?</h3>
+          <p>Applications for the 2026 academic session close August 30.</p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <a href="admissions.html" class="btn btn-gold">Start Application</a>
+          <a href="#" class="btn btn-outline">Download Prospectus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT + MAP ============ -->
+  <section class="section" style="background: var(--paper-2)" id="contact">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 40px; align-items: stretch">
+        <div class="card reveal" style="padding: 36px">
+          <span class="eyebrow">Get In Touch</span>
+          <h2 style="font-size: 26px">We'd Love to Hear From You</h2>
+          <form data-demo-form>
+            <div class="grid grid-2" style="gap: 16px">
+              <div class="form-field">
+                <label>Full Name</label
+                ><input type="text" required placeholder="Your name" />
+              </div>
+              <div class="form-field">
+                <label>Phone</label
+                ><input type="tel" required placeholder="98XXXXXXXX" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Email</label
+              ><input type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-field">
+              <label>Message</label
+              ><textarea
+                rows="4"
+                required
+                placeholder="How can we help?"
+              ></textarea>
+            </div>
+            <button
+              class="btn btn-crimson"
+              type="submit"
+              style="width: 100%; justify-content: center"
+            >
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p
+              class="form-success"
+              style="
+                display: none;
+                color: #1a7a3c;
+                font-weight: 700;
+                margin-top: 12px;
+                font-size: 14px;
+              "
+            >
+              <i class="fa-solid fa-circle-check"></i> Thank you! We'll respond
+              within one business day.
+            </p>
+          </form>
+        </div>
+        <div
+          class="reveal"
+          style="
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            min-height: 320px;
+          "
+        >
+          <iframe
+            src="https://www.google.com/maps?q=Nepalgunj,Nepal&output=embed"
+            width="100%"
+            height="100%"
+            style="border: 0; min-height: 320px"
+            loading="lazy"
+            title="School location map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section" style="padding-top: 0">
+    <div class="container">
+      <div
+        class="card reveal"
+        style="
+          padding: 40px;
+          text-align: center;
+          background: linear-gradient(120deg, var(--navy), var(--navy-2));
+          border: none;
+        "
+      >
+        <h3 style="color: #fff; font-size: 22px">
+          Subscribe to Our Newsletter
+        </h3>
+        <p style="color: #c9d3e6; max-width: 480px; margin: 8px auto 22px">
+          Get admission updates, event highlights and school news in your inbox.
+        </p>
+        <form
+          id="newsletterForm"
+          style="
+            display: flex;
+            gap: 10px;
+            max-width: 420px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+          "
+        >
+          <input
+            type="email"
+            required
+            placeholder="Enter your email"
+            style="
+              flex: 1;
+              min-width: 220px;
+              padding: 13px 16px;
+              border-radius: 10px;
+              border: none;
+            "
+          />
+          <button class="btn btn-crimson" type="submit">Subscribe</button>
+        </form>
+        <p
+          id="newsletterMsg"
+          style="
+            display: none;
+            color: var(--gold);
+            margin-top: 12px;
+            font-weight: 700;
+            font-size: 14px;
+          "
+        ></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock content %}

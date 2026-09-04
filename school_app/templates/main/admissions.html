@@ -1,0 +1,283 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Admissions</div>
+      <h1>Admissions — 2026 Academic Session</h1>
+    </div>
+  </section>
+
+  <!-- PROCEDURE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>Admission Procedure</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card reveal" style="padding: 26px">
+          <div class="icon-tile">
+            <i class="fa-solid fa-file-signature"></i>
+          </div>
+          <h3 style="font-size: 16.5px">1. Submit Application</h3>
+          <p style="font-size: 14px">
+            Fill the online or paper application form with required documents.
+          </p>
+        </div>
+        <div class="card reveal" style="padding: 26px">
+          <div class="icon-tile crimson">
+            <i class="fa-solid fa-clipboard-question"></i>
+          </div>
+          <h3 style="font-size: 16.5px">2. Assessment</h3>
+          <p style="font-size: 14px">
+            A short grade-appropriate written & oral assessment is scheduled.
+          </p>
+        </div>
+        <div class="card reveal" style="padding: 26px">
+          <div class="icon-tile">
+            <i class="fa-solid fa-people-arrows"></i>
+          </div>
+          <h3 style="font-size: 16.5px">3. Interview</h3>
+          <p style="font-size: 14px">
+            A brief meeting with the student and parents/guardians.
+          </p>
+        </div>
+        <div class="card reveal" style="padding: 26px">
+          <div class="icon-tile crimson">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3 style="font-size: 16.5px">4. Confirmation</h3>
+          <p style="font-size: 14px">
+            Offer letter issued; seat confirmed upon fee payment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELIGIBILITY + DOCUMENTS -->
+  <section class="section" style="background: var(--paper-2)">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 50px">
+        <div class="card reveal" style="padding: 32px">
+          <span class="eyebrow">Requirements</span>
+          <h2 style="font-size: 22px">Eligibility</h2>
+          <ul
+            style="
+              color: var(--ink-soft);
+              font-size: 14.5px;
+              line-height: 2;
+              padding-left: 20px;
+            "
+          >
+            <li>ECD: Age 3+ as of April 2026</li>
+            <li>Grade 1: Age 5+, basic readiness assessment</li>
+            <li>Grade 2–9: Report card from previous school required</li>
+            <li>Grade 10: Subject to seat availability & interview</li>
+          </ul>
+        </div>
+        <div class="card reveal" style="padding: 32px">
+          <span class="eyebrow">Checklist</span>
+          <h2 style="font-size: 22px">Required Documents</h2>
+          <ul
+            style="
+              color: var(--ink-soft);
+              font-size: 14.5px;
+              line-height: 2;
+              padding-left: 20px;
+            "
+          >
+            <li>Completed application form</li>
+            <li>Birth certificate (original + copy)</li>
+            <li>Previous school transfer certificate & report card</li>
+            <li>4 recent passport-size photographs</li>
+            <li>Copy of parent/guardian citizenship</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEE STRUCTURE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Transparent Pricing</span>
+        <h2>Fee Structure (Per Annum)</h2>
+      </div>
+      <div class="table-wrap reveal">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Admission Fee</th>
+              <th>Tuition (Monthly)</th>
+              <th>Annual Charges</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ECD</td>
+              <td>NPR 8,000</td>
+              <td>NPR 2,800</td>
+              <td>NPR 5,000</td>
+            </tr>
+            <tr>
+              <td>Grade 1–5</td>
+              <td>NPR 10,000</td>
+              <td>NPR 3,500</td>
+              <td>NPR 6,500</td>
+            </tr>
+            <tr>
+              <td>Grade 6–8</td>
+              <td>NPR 12,000</td>
+              <td>NPR 4,200</td>
+              <td>NPR 7,500</td>
+            </tr>
+            <tr>
+              <td>Grade 9–10</td>
+              <td>NPR 15,000</td>
+              <td>NPR 5,000</td>
+              <td>NPR 9,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 13px; margin-top: 14px">
+        *Fees indicative for demonstration purposes; confirm current figures
+        with the finance office. Sibling and merit scholarships available.
+      </p>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section class="section" style="background: var(--paper-2)" id="apply">
+    <div class="container">
+      <div
+        class="card reveal"
+        style="padding: 40px; max-width: 820px; margin: 0 auto"
+      >
+        <span class="eyebrow">Online Admission</span>
+        <h2 style="font-size: 24px">Apply for Admission</h2>
+        <form data-demo-form>
+          <div class="grid grid-2" style="gap: 16px">
+            <div class="form-field">
+              <label>Student's Full Name</label><input type="text" required />
+            </div>
+            <div class="form-field">
+              <label>Date of Birth</label><input type="date" required />
+            </div>
+            <div class="form-field">
+              <label>Applying for Grade</label>
+              <select required>
+                <option value="">Select Grade</option>
+                <option>ECD</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 6</option>
+                <option>Grade 9</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Previous School (if any)</label><input type="text" />
+            </div>
+            <div class="form-field">
+              <label>Parent/Guardian Name</label><input type="text" required />
+            </div>
+            <div class="form-field">
+              <label>Contact Number</label><input type="tel" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Address</label><input type="text" required />
+          </div>
+          <div class="form-field">
+            <label>Additional Notes</label><textarea rows="3"></textarea>
+          </div>
+          <button
+            class="btn btn-crimson"
+            type="submit"
+            style="width: 100%; justify-content: center"
+          >
+            Submit Application <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p
+            class="form-success"
+            style="
+              display: none;
+              color: #1a7a3c;
+              font-weight: 700;
+              margin-top: 12px;
+              font-size: 14px;
+            "
+          >
+            <i class="fa-solid fa-circle-check"></i> Application received! Our
+            admissions team will contact you within 2 business days.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Common Questions</span>
+        <h2>Admissions FAQs</h2>
+      </div>
+      <div style="max-width: 760px; margin: 0 auto">
+        <div class="faq-item reveal open">
+          <div class="faq-q">
+            Is there an entrance exam for all grades?
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-a">
+            <p style="font-size: 14.5px">
+              A short readiness assessment applies from Grade 2 onward; ECD and
+              Grade 1 admissions are interview-based only.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            Do you offer scholarships? <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-a">
+            <p style="font-size: 14.5px">
+              Yes — merit-based and sibling-discount scholarships are available;
+              ask the admissions office for details.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            Is school transport available? <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-a">
+            <p style="font-size: 14.5px">
+              Yes, we operate bus routes covering most areas of Nepalgunj at an
+              additional monthly fee.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            When does the 2026 session begin?
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-a">
+            <p style="font-size: 14.5px">
+              Classes begin the first week of Baishakh (mid-April); orientation
+              is one week prior.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock content %}
