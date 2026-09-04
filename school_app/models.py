@@ -77,3 +77,16 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.full_name
+
+
+
+# class Student(models.Model):
+#     f_name = models.CharField(max_length=100)
+#     admission_number = models.CharField(max_length=30, unique= True)
+#     email_adress = models.EmailField()
+#     p_number = models.CharField(max_length=15)
+#     password = models.CharField(max_length=128)
+#     confirm_password = models.CharField(max_length=128)
+
+#     def __str__(self):
+#         return self.f_name

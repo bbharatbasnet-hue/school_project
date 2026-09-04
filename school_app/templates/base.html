@@ -41,6 +41,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- alertfy js link -->
+     
+<!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -85,6 +92,7 @@
             >
           </div>
           <div class="topbar-links">
+            <a href="{% url 'register' %}">Student / Teacher Register</a>
             <a href="{% url 'login' %}">Student / Teacher Login</a>
             <button
               id="langToggle"

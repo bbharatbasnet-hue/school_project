@@ -23,16 +23,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <!-- Alertfy link here js -->
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
-
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"
-    />
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -137,77 +127,85 @@
                 />
               </div>
               <div class="form-field">
-                <label>First Name</label
+                <label>Full Name</label
                 ><input
                   type="text"
                   required
-                  placeholder="Your first name"
-                  name="first_name"
+                  placeholder="Your full name"
+                  name="f_name"
                 />
               </div>
               <div class="form-field" id="idField">
-                <label id="idLabel">Last Name</label
+                <label id="idLabel">Admission Number</label
                 ><input
                   type="text"
                   required
-                  placeholder="Enter your last name"
-                  name="last_name"
+                  placeholder="e.g. JC-2026-0142"
+                  name="admission_number"
                 />
-              </div>
-              <div class="form-field">
-                <label>Email Address</label
-                ><input
-                  type="email"
-                  required
-                  placeholder="you@example.com"
-                  name="email"
-                />
-              </div>
-
-              <div class="form-field">
-                <label>Password</label>
-                <input
-                  type="password"
-                  id="regPassword"
-                  required
-                  placeholder="Create a password"
-                  name="password"
-                />
-                <div class="strength-meter">
-                  <div class="fill" id="strengthFill"></div>
-                </div>
-                <div class="strength-label" id="strengthLabel">
-                  Password strength
-                </div>
-                <ul class="req-list" id="reqList">
-                  <li id="reqLen">
-                    <i class="fa-solid fa-circle-check"></i> At least 8
-                    characters
-                  </li>
-                  <li id="reqUpper">
-                    <i class="fa-solid fa-circle-check"></i> One uppercase
-                    letter
-                  </li>
-                  <li id="reqNum">
-                    <i class="fa-solid fa-circle-check"></i> One number
-                  </li>
-                </ul>
-              </div>
-              <div class="form-field">
-                <label>Confirm Password</label
-                ><input
-                  type="password"
-                  id="regConfirm"
-                  required
-                  placeholder="Re-enter password"
-                  name="confirm_password"
-                />
-                <p
-                  id="matchMsg"
-                  style="font-size: 12.5px; margin: 6px 0 0; display: none"
-                ></p>
               </div>
             </div>
+            <div class="form-field">
+              <label>Email Address</label
+              ><input
+                type="email"
+                required
+                placeholder="you@example.com"
+                name="email_adress"
+              />
+            </div>
+            <div class="form-field">
+              <label>Phone Number</label
+              ><input
+                type="tel"
+                required
+                placeholder="98XXXXXXXX"
+                name="p_number"
+              />
+            </div>
+
+            <div class="form-field">
+              <label>Password</label>
+              <input
+                type="password"
+                id="regPassword"
+                required
+                placeholder="Create a password"
+                name="password"
+              />
+              <div class="strength-meter">
+                <div class="fill" id="strengthFill"></div>
+              </div>
+              <div class="strength-label" id="strengthLabel">
+                Password strength
+              </div>
+              <ul class="req-list" id="reqList">
+                <li id="reqLen">
+                  <i class="fa-solid fa-circle-check"></i> At least 8 characters
+                </li>
+                <li id="reqUpper">
+                  <i class="fa-solid fa-circle-check"></i> One uppercase letter
+                </li>
+                <li id="reqNum">
+                  <i class="fa-solid fa-circle-check"></i> One number
+                </li>
+              </ul>
+            </div>
+            <div class="form-field">
+              <label>Confirm Password</label
+              ><input
+                type="password"
+                id="regConfirm"
+                required
+                placeholder="Re-enter password"
+                name="confirm_password"
+              />
+              <p
+                id="matchMsg"
+                style="font-size: 12.5px; margin: 6px 0 0; display: none"
+              ></p>
+            </div>
+
             <div
               class="flex items-center gap-3"
               style="margin-bottom: 20px; font-size: 13px"
@@ -295,19 +293,5 @@
     "Employee ID" : "Admission Number"; document.querySelector("#idField
     input").placeholder = role === "Teacher" ? "e.g. EMP-0042" : "e.g.
     JC-2026-0142"; }); }); -->
-    <div>
-      {% if messages %} {% for message in messages %}
-      <script>
-        alertify.set("notifier", "position", "bottom-rigth");
-        {% if message.tags == 'error' %}
-        alertify.error('{{message}}');
-        {% else %}
-        alertify.success('{{message}}')
-
-        {% endif%}
-      </script>
-
-      {% endfor%} {% endif %}
-    </div>
   </body>
 </html>

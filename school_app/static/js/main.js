@@ -234,33 +234,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Register js
+// // Register js
 
-      // Live password strength meter
-      const pwd = document.getElementById("regPassword");
-      const fill = document.getElementById("strengthFill");
-      const label = document.getElementById("strengthLabel");
-      const reqLen = document.getElementById("reqLen");
-      const reqUpper = document.getElementById("reqUpper");
-      const reqNum = document.getElementById("reqNum");
+//       // Live password strength meter
+//       const pwd = document.getElementById("regPassword");
+//       const fill = document.getElementById("strengthFill");
+//       const label = document.getElementById("strengthLabel");
+//       const reqLen = document.getElementById("reqLen");
+//       const reqUpper = document.getElementById("reqUpper");
+//       const reqNum = document.getElementById("reqNum");
 
-      pwd?.addEventListener("input", () => {
-        const v = pwd.value;
-        const hasLen = v.length >= 8;
-        const hasUpper = /[A-Z]/.test(v);
-        const hasNum = /[0-9]/.test(v);
-        reqLen.classList.toggle("met", hasLen);
-        reqUpper.classList.toggle("met", hasUpper);
-        reqNum.classList.toggle("met", hasNum);
+//       pwd?.addEventListener("input", () => {
+//         const v = pwd.value;
+//         const hasLen = v.length >= 8;
+//         const hasUpper = /[A-Z]/.test(v);
+//         const hasNum = /[0-9]/.test(v);
+//         reqLen.classList.toggle("met", hasLen);
+//         reqUpper.classList.toggle("met", hasUpper);
+//         reqNum.classList.toggle("met", hasNum);
 
-        const score = [hasLen, hasUpper, hasNum].filter(Boolean).length;
-        const pct = [0, 33, 66, 100][score];
-        const colors = ["#e2e2e2", "#C8102E", "#C9A24B", "#1a7a3c"];
-        const labels = ["Password strength", "Weak", "Fair", "Strong"];
-        fill.style.width = pct + "%";
-        fill.style.background = colors[score];
-        label.textContent = labels[score];
-      });
+//         const score = [hasLen, hasUpper, hasNum].filter(Boolean).length;
+//         const pct = [0, 33, 66, 100][score];
+//         const colors = ["#e2e2e2", "#C8102E", "#C9A24B", "#1a7a3c"];
+//         const labels = ["Password strength", "Weak", "Fair", "Strong"];
+//         fill.style.width = pct + "%";
+//         fill.style.background = colors[score];
+//         label.textContent = labels[score];
+//       });
 
       // Live confirm-password match check
       const confirm = document.getElementById("regConfirm");

@@ -29,7 +29,7 @@
     <a href="#main" class="skip-link">Skip to main content</a>
     <header class="site-header">
       <nav class="container navbar" style="position: relative">
-        <a href="index.html" class="brand">
+        <a href="{% url 'index' %}" class="brand">
           <div class="crest">
             <svg viewBox="0 0 100 100">
               <polygon
@@ -170,7 +170,9 @@
           </form>
           <p style="font-size: 13px; margin-top: 22px">
             Need help accessing your account?
-            <a href="contact.html" style="color: var(--navy); font-weight: 700"
+            <a
+              href="{% url 'contact' %}"
+              style="color: var(--navy); font-weight: 700"
               >Contact the school office</a
             >
           </p>

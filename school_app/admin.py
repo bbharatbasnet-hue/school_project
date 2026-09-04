@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+# from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+# from django.contrib.auth.models import User as AuthUser
 from .models import  Contact
 # from .models import User, Student, Teacher, Contact
 
@@ -34,3 +35,16 @@ from .models import  Contact
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('id', 'full_name', 'phone_number', 'email', 'subject', 'message')
+
+
+# @admin.register(Student)
+# class StudentAdmin(admin.ModelAdmin):
+#     list_display = (
+#         'id',
+#         'f_name',
+#         'admission_number',
+#         'email_adress',
+#         'p_number',
+#         'password',
+#         'confirm_password',
+#     )
