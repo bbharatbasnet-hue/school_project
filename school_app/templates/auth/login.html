@@ -60,7 +60,10 @@
           ><a href="{% url 'about' %}">About</a
           ><a href="{% url 'admissions'%}">Admissions</a
           ><a href="{% url 'academics'%}">Academics</a
-          ><a href="{% url 'contact' %}">Contact</a>
+          ><a href="{% url 'contact' %}">Contact</a> ><a
+            href="{% url 'register' %}"
+            >Register</a
+          >
         </div>
         <div class="nav-actions">
           <button
@@ -100,7 +103,10 @@
               </text>
             </svg>
           </div>
+
           <h2 style="margin-bottom: 6px">Portal Sign In</h2>
+          <!-- From Uiverse.io by zanina-yassine -->
+
           <p style="font-size: 14px; margin-bottom: 24px">
             Signing in as
             <strong id="loginRoleLabel" style="color: var(--crimson)"
@@ -147,6 +153,7 @@
             >
               Sign In <i class="fa-solid fa-arrow-right-to-bracket"></i>
             </button>
+
             <p
               class="form-success"
               style="
@@ -167,6 +174,9 @@
               >Contact the school office</a
             >
           </p>
+          <button class="button">
+            <a href="{% url 'register' %}">Register here</a>
+          </button>
         </div>
       </div>
     </main>

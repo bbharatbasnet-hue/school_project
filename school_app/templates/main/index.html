@@ -17,10 +17,12 @@
             Development through Grade 10.
           </p>
           <div class="hero-cta">
-            <a href="admissions.html" class="btn btn-crimson"
+            <a href="{% url 'admissions' %}" class="btn btn-crimson"
               >Apply for Admission <i class="fa-solid fa-arrow-right"></i
             ></a>
-            <a href="about.html" class="btn btn-outline">Take a School Tour</a>
+            <a href="{% url 'about' %}" class="btn btn-outline"
+              >Take a School Tour</a
+            >
           </div>
           <div class="hero-motto">
             "Knowledge with Character, Character with Courage."
@@ -28,8 +30,10 @@
         </div>
         <div class="hero-visual">
           <div class="hero-photo">
+            {% load static %}
+
             <img
-              src="https://picsum.photos/seed/jcss-hero/900/700"
+              src="{% static 'images/school_p.jpg' %}"
               alt="Students of Junior Cambridge Secondary School in the courtyard"
             />
           </div>
@@ -83,7 +87,7 @@
         <div class="reveal">
           <div style="position: relative">
             <img
-              src="https://picsum.photos/seed/principal-jcss/700/560"
+              src="{% static 'images/pi.png' %}"
               alt="Principal of Junior Cambridge Secondary School"
               style="border-radius: 20px; box-shadow: var(--shadow-lg)"
             />
@@ -105,7 +109,7 @@
                   font-size: 17px;
                 "
               >
-                Mr. Rajendra Thapa
+                Mrs. AnnaPurna Singh
               </div>
               <div style="font-size: 12px; color: var(--gold)">
                 Principal, M.Ed.

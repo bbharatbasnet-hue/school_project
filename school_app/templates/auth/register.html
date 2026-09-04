@@ -1,0 +1,265 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Junior Cambridge Secondary School</title>
+    <meta
+      name="description"
+      content="Create a Student or Teacher portal account for Junior Cambridge Secondary School."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230B2545%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22%23C9A24B%22 font-family=%22serif%22>J</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+      <nav class="container navbar" style="position: relative">
+        <a href="{% url 'index' %}" class="brand">
+          <div class="crest">
+            <svg viewBox="0 0 100 100">
+              <polygon
+                points="50,4 93,27 93,73 50,96 7,73 7,27"
+                fill="#123564"
+                stroke="#C9A24B"
+                stroke-width="3"
+              />
+              <text
+                x="50"
+                y="63"
+                font-family="Fraunces,serif"
+                font-size="42"
+                text-anchor="middle"
+                fill="#C9A24B"
+              >
+                JC
+              </text>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <div class="name">Junior Cambridge</div>
+            <div class="sub">Secondary School</div>
+          </div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="{% url 'index' %}">Home</a
+          ><a href="{% url 'about' %}">About</a
+          ><a href="{% url 'admissions' %}">Admissions</a
+          ><a href="{% url 'academics'%}">Academics</a
+          ><a href="{% url 'contact' %}">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="mobile-toggle" id="navToggle" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="login-wrap">
+        <div class="card login-card reveal" style="max-width: 480px">
+          <div class="crest" style="margin: 0 auto 18px; --s: 64px">
+            <svg viewBox="0 0 100 100">
+              <polygon
+                points="50,4 93,27 93,73 50,96 7,73 7,27"
+                fill="#123564"
+                stroke="#C9A24B"
+                stroke-width="3"
+              />
+              <text
+                x="50"
+                y="63"
+                font-family="Fraunces,serif"
+                font-size="42"
+                text-anchor="middle"
+                fill="#C9A24B"
+              >
+                JC
+              </text>
+            </svg>
+          </div>
+          <h2 style="margin-bottom: 6px">Create Your Account</h2>
+          <p style="font-size: 14px; margin-bottom: 24px">
+            Registering as
+            <strong id="registerRoleLabel" style="color: var(--crimson)"
+              >Student</strong
+            >
+          </p>
+
+          <div class="role-switch">
+            <button type="button" class="active" data-role="Student">
+              Student
+            </button>
+            <button type="button" data-role="Teacher">Teacher</button>
+          </div>
+
+          <form data-demo-form id="registerForm" style="text-align: left">
+            <div class="grid grid-2" style="gap: 16px">
+              <div class="form-field">
+                <label>Full Name</label
+                ><input type="text" required placeholder="Your full name" />
+              </div>
+              <div class="form-field" id="idField">
+                <label id="idLabel">Admission Number</label
+                ><input type="text" required placeholder="e.g. JC-2026-0142" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Email Address</label
+              ><input type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-field">
+              <label>Phone Number</label
+              ><input type="tel" required placeholder="98XXXXXXXX" />
+            </div>
+
+            <div class="form-field">
+              <label>Password</label>
+              <input
+                type="password"
+                id="regPassword"
+                required
+                placeholder="Create a password"
+              />
+              <div class="strength-meter">
+                <div class="fill" id="strengthFill"></div>
+              </div>
+              <div class="strength-label" id="strengthLabel">
+                Password strength
+              </div>
+              <ul class="req-list" id="reqList">
+                <li id="reqLen">
+                  <i class="fa-solid fa-circle-check"></i> At least 8 characters
+                </li>
+                <li id="reqUpper">
+                  <i class="fa-solid fa-circle-check"></i> One uppercase letter
+                </li>
+                <li id="reqNum">
+                  <i class="fa-solid fa-circle-check"></i> One number
+                </li>
+              </ul>
+            </div>
+            <div class="form-field">
+              <label>Confirm Password</label
+              ><input
+                type="password"
+                id="regConfirm"
+                required
+                placeholder="Re-enter password"
+              />
+              <p
+                id="matchMsg"
+                style="font-size: 12.5px; margin: 6px 0 0; display: none"
+              ></p>
+            </div>
+
+            <div
+              class="flex items-center gap-3"
+              style="margin-bottom: 20px; font-size: 13px"
+            >
+              <input
+                type="checkbox"
+                required
+                style="width: auto"
+                id="termsCheck"
+              />
+              <label
+                for="termsCheck"
+                style="margin: 0; font-weight: 400; color: var(--ink-soft)"
+                >I agree to the
+                <a href="#" style="color: var(--crimson); font-weight: 700"
+                  >Terms of Service</a
+                >
+                and
+                <a href="#" style="color: var(--crimson); font-weight: 700"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
+
+            <button
+              class="btn btn-crimson"
+              type="submit"
+              style="width: 100%; justify-content: center"
+            >
+              Create Account <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <p
+              class="form-success"
+              style="
+                display: none;
+                color: #1a7a3c;
+                font-weight: 700;
+                margin-top: 12px;
+                font-size: 14px;
+              "
+            >
+              <i class="fa-solid fa-circle-check"></i> This is a front-end demo
+              — connect a backend to enable real account creation.
+            </p>
+          </form>
+
+          <p style="font-size: 13.5px; margin-top: 22px">
+            Already have an account?
+            <a
+              href="{% url 'login' %}"
+              style="color: var(--navy); font-weight: 700"
+              >Sign in here</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" style="padding-top: 34px">
+      <div
+        class="container footer-bottom"
+        style="padding-left: 0; padding-right: 0; border-top: none"
+      >
+        <span>
+          © 2026 Junior Cambridge Secondary School. All rights reserved.
+        </span>
+
+        <span> Designed with care for our school community. </span>
+
+        <span> Developed by <strong>Bharat Basnet</strong> </span>
+
+        <span><a href="{% url 'index' %}">Back to homepage</a></span>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+    // Role switch: Student vs Teacher (updates label + ID field)
+    document.querySelectorAll(".role-switch button").forEach((btn) => {
+    btn.addEventListener("click", () => { document
+    .querySelectorAll(".role-switch button") .forEach((b) =>
+    b.classList.remove("active")); btn.classList.add("active"); const role =
+    btn.dataset.role; document.getElementById("registerRoleLabel").textContent =
+    role; document.getElementById("idLabel").textContent = role === "Teacher" ?
+    "Employee ID" : "Admission Number"; document.querySelector("#idField
+    input").placeholder = role === "Teacher" ? "e.g. EMP-0042" : "e.g.
+    JC-2026-0142"; }); });
+  </body>
+</html>
